@@ -1,0 +1,33 @@
+<div class="panel panel-default ">
+	<div class="alert alert-info">
+		<span class="lead">List of Users </span>
+	</div>
+	<div class="panel-body ">
+		<div class="table-responsive">
+			<table ng-table="vm.tableParams" class="table table-hover table-bordered" show-filter="true">
+				<tr ng-repeat="user in $data">
+					<td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+						{{user.name}}
+					</td>
+					<td title="'Email'" filter="{ email: 'text'}">{{user.email}}</td>
+					<td title="'Address'" filter="{ address: 'text'}">{{user.address}}</td>
+					<td title="'Edit'" >
+						<button type="button" ng-click="editUser(user.id)"
+							class="btn btn-primary custom-width">
+							<span class="glyphicon glyphicon-edit"></span>Edit
+						</button>
+					</td>
+					<td title="'Delete'" >
+						<button type="button" ng-click="deleteUser(user.id)"
+							class="btn btn-danger custom-width">
+							<span class="glyphicon glyphicon-remove"></span>Delete
+						</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	
+</script>

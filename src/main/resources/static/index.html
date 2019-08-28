@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<meta charset="UTF-8" />
+<title>Index page</title>
+<script src="/js/angular.js"></script>
+<script src="/js/angular-resource.js"></script>
+<script src="/js/angular-route.js"></script>
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/bootstrap-theme.css">
+<link rel="stylesheet" href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
+<script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
+<script src="/js/myapp.js"></script>
+<script src="/js/mycontroller.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="text-center">
+			<h1>User Registration System</h1>
+		</div>
+		<nav class="navbar navbar-default">
+			<a href="#/" role="button" class="btn btn-default navbar-btn">Home</a>
+			<a href="#/register" role="button" class="btn btn-default navbar-btn">Register</a>
+			<a href="#/listuser" role="button" class="btn btn-default navbar-btn">List Users</a>
+		</nav>
+		<div ng-view></div>
+	</div>
+
+	<script type="text/javascript">
+	</script>
+</body>
+</html>
