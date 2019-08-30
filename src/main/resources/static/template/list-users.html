@@ -4,7 +4,7 @@
 	</div>
 	<div class="panel-body ">
 		<div class="table-responsive">
-			<table ng-table="vm.tableParams" class="table table-hover table-bordered" show-filter="true">
+			<table ng-table="vm.tableParams" class="table table-hover table-bordered table-condensed" show-filter="true">
 				<tr ng-repeat="user in $data">
 					<td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
 						{{user.name}}
